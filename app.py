@@ -87,7 +87,7 @@ if uploaded_file and target_subject:
             st.download_button(
                 label="⬇️ Download Extracted PDF",
                 data=output_stream.getvalue(),
-                file_name=f"{target_subject}_Extracted.pdf",
+                file_name=uploaded_file.name,
                 mime="application/pdf"
             )
         else:
